@@ -26,7 +26,9 @@ const FunctionComponent = (props) => {
 
   return (
     <div>
-      <h3>Property Based Function Component Sample</h3>
+      <h3 style={{ textDecorationLine: "underline" }}>
+        Property Based Function Component Sample
+      </h3>
       <h4>
         My First Name is {props.firstName}, Last Name is : {props.lastName} and
         My Age is {props.age}

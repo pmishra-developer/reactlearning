@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import createRoutes from "./Routes";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+const routes = createRoutes();
 
 ReactDOM.render(
   <React.StrictMode>

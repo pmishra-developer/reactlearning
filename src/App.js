@@ -7,6 +7,7 @@ import FunctionComponent from "./Components/FunctionComponent";
 import MultiComponent from "./Components/MultiComponent";
 import FormComponent from "./Components/FormComponent";
 import MultiStepForm from "./Components/Form/MultiLevelForm";
+import CounterHooks from "./Components/Hooks/CounterHooksComponent";
 
 const messages = { message1: "I am Message 1", message2: "I am Message 2" };
 
@@ -81,6 +82,7 @@ function App() {
 
             <Route exact path="/multiComponent" element={<MultiComponent />} />
             <Route exact path="/formComponent" element={<FormComponent />} />
+            <Route exact path="/hooks" element={<CounterHooks />} />
             <Route
               exact
               path="/multiStepFormComponent"

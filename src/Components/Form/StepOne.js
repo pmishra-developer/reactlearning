@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Card, Button } from "react-bootstrap";
+import validator from "validator";
 
 // creating functional component ans getting props from app.js and destucturing them
 const StepOne = ({ nextStep, handleFormData, values }) => {
@@ -11,16 +12,16 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
     e.preventDefault();
 
     // checking if value of first name and last name is empty show error else take to step 2
-    nextStep();
+    // nextStep();
 
-    // if (
-    //   validator.isEmpty(values.firstName) ||
-    //   validator.isEmpty(values.lastName)
-    // ) {
-    //   setError(true);
-    // } else {
-    //   nextStep();
-    // }
+    if (
+      validator.isEmpty(values.firstName) ||
+      validator.isEmpty(values.lastName)
+    ) {
+      setError(true);
+    } else {
+      nextStep();
+    }
   };
 
   return (

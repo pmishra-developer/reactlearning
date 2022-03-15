@@ -6,7 +6,7 @@ const FinalStep = ({ values }) => {
   const { firstName, lastName, age, email } = values;
   return (
     <>
-      <Card style={{ marginTop: 100, textAlign: "left" }}>
+      <Card style={{ marginTop: 100, textAlign: "left", color: "black" }}>
         <Card.Body>
           <p>
             <strong>First Name :</strong> {firstName}{" "}

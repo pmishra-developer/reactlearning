@@ -35,8 +35,8 @@ export default class ClassComponent extends React.Component {
           Message2: {this.props.messages.message2}
         </h4>
         <span>Our Offfices are at:</span>
-        {locations.map((item) => (
-          <PlaceComponent {...item} />
+        {locations.map((item, index) => (
+          <PlaceComponent key={index} {...item} />
         ))}
       </div>
     );

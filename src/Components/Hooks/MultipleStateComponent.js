@@ -16,7 +16,7 @@ const MultipleState = (props) => {
 
   return (
     <div>
-      <h3>Multiple State Vars Example:</h3>
+      <h3>Multiple State Example:</h3>
       <p>Today I am {age} Years of Age</p>
       <p>My Favorite Colour is: {favColour}</p>
       <div>

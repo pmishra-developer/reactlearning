@@ -8,6 +8,10 @@ import MultiComponent from "./Components/MultiComponent";
 import FormComponent from "./Components/FormComponent";
 import MultiStepForm from "./Components/Form/MultiLevelForm";
 import CounterHooks from "./Components/Hooks/CounterHooksComponent";
+import AppNavigationComponent from "./Components/Apps/AppNavigationComponent";
+import ToDoListComponent from "./Components/Apps/ToDoListHooks/ToDoListComponent";
+// import Calculator from "./Components/Apps/Calculator/Calculator";
+import ReduxComponent from "./Components/Redux/ReduxComponent";
 
 const messages = { message1: "I am Message 1", message2: "I am Message 2" };
 
@@ -83,6 +87,14 @@ function App() {
             <Route exact path="/multiComponent" element={<MultiComponent />} />
             <Route exact path="/formComponent" element={<FormComponent />} />
             <Route exact path="/hooks" element={<CounterHooks />} />
+            <Route exact path="/apps" element={<AppNavigationComponent />} />
+            <Route exact path="/redux" element={<ReduxComponent />} />
+            {/* <Route exact path="/calculator" element={<Calculator />} /> */}
+            <Route
+              exact
+              path="/todostate-hooks"
+              element={<ToDoListComponent />}
+            />
             <Route
               exact
               path="/multiStepFormComponent"
